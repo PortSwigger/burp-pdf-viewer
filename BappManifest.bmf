@@ -1,0 +1,11 @@
+Uuid: 4b0cbd1e44da4212881cc1480ba1bc68
+ExtensionType: 1
+Name: PDF Viewer
+ScreenVersion: 1.0
+SerialVersion: 1
+MinPlatformVersion: 0
+ProOnly: False
+Author: Philippe Arteau
+ShortDescription: Allows viewing of PDF files directly within Burp.
+EntryPoint: pdf-viewer-burp-plugin/target/pdf-viewer-burp-plugin-1.jar
+BuildCommand: mvn install:install-file -Dfile=libs/icepdf-core.jar -DgroupId=org.icepdf -DartifactId=icepdf-core -Dversion=5.1.1 -Dpackaging=jar && mvn install:install-file -Dfile=libs/icepdf-viewer.jar -DgroupId=org.icepdf -DartifactId=icepdf-viewer -Dversion=5.1.1 -Dpackaging=jar && mvn package -DskipTests=true -Dmaven.javadoc.skip=true -B -Pburp-only
