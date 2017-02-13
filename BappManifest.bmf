@@ -1,6 +1,7 @@
 Uuid: 4b0cbd1e44da4212881cc1480ba1bc68
 ExtensionType: 1
 Name: PDF Viewer
+RepoName: pdf-viewer
 ScreenVersion: 1.0
 SerialVersion: 1
 MinPlatformVersion: 0
